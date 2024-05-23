@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    font-family: Myriad Web Pro
 }
 
 /* ↓↓ Navbar ↓↓ */
@@ -15,14 +16,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #2a3478;
-    height: 4rem;
+    font-family: charter;
+    height: 8vh;
     width: 100%;
 }
 
 /* Logo i navigationsbaren */
 nav img {
-    width: 3.5rem;
-    height: 3.5rem;
+    height: 7vh;
+    width: auto;
     display: flex;
     align-items: center;
     margin-left: 4px;
@@ -33,12 +35,10 @@ nav img {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border: solid 2px rgb(0, 255, 47);
     list-style: none;
 }
 
 .nav-links a {
-    border: solid 2px rgb(255, 0, 174);
     height: 100%;
     padding: 0rem 1rem;
     text-decoration: none; 
@@ -47,6 +47,7 @@ nav img {
     align-content: center;
     justify-content: center;
     color: #fcba16;
+    font-size: 1.2rem;
 }
 
 
@@ -61,13 +62,16 @@ nav img {
     display: none;
     position: absolute;
     min-width: 11rem;
-    background-color: rgb(255, 247, 251); 
+    background-color: #2a3478;
     font-size: 0.9375rem;
 }
 
 .dropdown-content a {
-    margin: 0.6rem 0; 
-    color: rgb(0, 255, 179);
+    margin: 1rem 0; 
+    color: #fcba16;
+  
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dropdown:hover .dropdown-content {
@@ -78,18 +82,18 @@ nav img {
 .burger {
     display: none;
     cursor: pointer;
+
 }
 
 .burger div {
-    width: 2.34375rem; /* 1.5625rem * 1.5 */
-    height: 0.28125rem; /* 0.1875rem * 1.5 */
+    width: 3.75vh; /* 2.34375rem * 1.6 */
+    height: 0.45vh; /* 0.28125rem * 1.6 */
     background-color: #fcba16;
-    margin: 7.5px; /* 5px * 1.5 */
-    transition: all 0.6s ease;
+    margin: 0.75vh; /* 7.5px * 0.1 */
 }
 
 .burger.toggle div:nth-child(1) {
-    transform: rotate(-45deg) translate(-7.5px, 9px); /* -5px * 1.5, 6px * 1.5 */
+    transform: rotate(-45deg) translate(-0.75vh, 0.9vh); /* -7.5px * 0.1, 9px * 0.1 */
 }
 
 .burger.toggle div:nth-child(2) {
@@ -97,13 +101,83 @@ nav img {
 }
 
 .burger.toggle div:nth-child(3) {
-    transform: rotate(45deg) translate(-7.5px, -9px); /* -5px * 1.5, -6px * 1.5 */
+    transform: rotate(45deg) translate(-0.75vh, -0.9vh); /* -7.5px * 0.1, -9px * 0.1 */
 }
 
+/* ↓↓ Main ↓↓ */
+.main-index{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: space;
+}
+
+.main-index section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+article h1{ 
+    font-size: 4rem;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+}
+
+article h2{ 
+    font-size: 2rem;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+    margin: 1.5rem 0 0 0;
+    border: #fcba16 solid 3px;
+}
+
+article img{
+    width: 10rem;
+    height: auto;
+    margin: 1.5rem 0;
+    
+}
+
+article h3{ 
+    font-size: 1.8rem;
+    font-style: italic;
+    width: 100%;
+    padding: 0 6rem 0 6rem;
+    color: #2a3478;
+    
+}
+
+article p{
+    font-size: 1rem;
+    color: #2a3478;
+    text-align: justify;
+    margin: 0 6rem 3rem 6rem;
+
+}
+
+
 .forside-billede{
-    width: 40%;
-    height: 40%;
-    border: solid 2px rgb(0, 255, 47);
+    height: 92vh;
+    width: auto;
 }
 
 

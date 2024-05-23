@@ -12,3 +12,19 @@ const navSlide = () => {
 }
 
 navSlide();
+
+var burger = document.querySelector('.burger');
+
+burger.addEventListener('click', function() {
+    var burgerDivs = document.querySelectorAll('.burger div');
+
+    burgerDivs.forEach(function(div) {
+        div.style.transition = 'all 0.6s ease';
+    });
+
+    setTimeout(function() {
+        burgerDivs.forEach(function(div) {
+            div.style.transition = '';
+        });
+    }, 600);
+});
