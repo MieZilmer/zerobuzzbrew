@@ -22,9 +22,3 @@ burger.addEventListener('click', function() {
         div.style.transition = 'all 0.6s ease';
     });
 
-    setTimeout(function() {
-        burgerDivs.forEach(function(div) {
-            div.style.transition = '';
-        });
-    }, 600);
-});
