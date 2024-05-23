@@ -40,14 +40,14 @@ nav img {
 
 .nav-links a {
     height: 100%;
-    padding: 0rem 1rem;
+    padding: 0rem 2vh;
     text-decoration: none; 
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     color: #fcba16;
-    font-size: 1.2rem;
+    font-size: 2.2vh;
 }
 
 
@@ -84,16 +84,15 @@ nav img {
     cursor: pointer;
 
 }
-
 .burger div {
-    width: 3.75vh; /* 2.34375rem * 1.6 */
-    height: 0.45vh; /* 0.28125rem * 1.6 */
+    width: 5vh; /* 7vh * 0.7143 */
+    height: 0.6vh; /* 0.84vh * 0.7143 */
     background-color: #fcba16;
-    margin: 0.75vh; /* 7.5px * 0.1 */
+    margin: 1vh; /* 1.4vh * 0.7143 */
 }
 
 .burger.toggle div:nth-child(1) {
-    transform: rotate(-45deg) translate(-0.75vh, 0.9vh); /* -7.5px * 0.1, 9px * 0.1 */
+    transform: rotate(-45deg) translate(-1vh, 1.2vh); /* -1.4vh * 0.7143, 1.68vh * 0.7143 */
 }
 
 .burger.toggle div:nth-child(2) {
@@ -101,9 +100,8 @@ nav img {
 }
 
 .burger.toggle div:nth-child(3) {
-    transform: rotate(45deg) translate(-0.75vh, -0.9vh); /* -7.5px * 0.1, -9px * 0.1 */
+    transform: rotate(45deg) translate(-1vh, -1.2vh); /* -1.4vh * 0.7143, -1.68vh * 0.7143 */
 }
-
 /* ↓↓ Main ↓↓ */
 .main-index{
     display: flex;
@@ -135,14 +133,14 @@ article{
 }
 
 article h1{ 
-    font-size: 4rem;
+    font-size: 8vh;
     text-align: center;
     color: #2a3478;
     font-family: charter;
 }
 
 article h2{ 
-    font-size: 2rem;
+    font-size: 4vh;
     text-align: center;
     color: #2a3478;
     font-family: charter;
@@ -151,7 +149,7 @@ article h2{
 }
 
 article img{
-    width: 10rem;
+    width: 20vh;
     height: auto;
     margin: 1.5rem 0;
     
@@ -177,7 +175,7 @@ article p{
 
 .forside-billede{
     height: 92vh;
-    width: auto;
+    width: 61vh;
 }
 
 
