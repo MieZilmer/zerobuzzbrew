@@ -4,59 +4,92 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+/* ↓↓ Navbar ↓↓ */
+/* Selve navigationsbaren */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid 2px red;
     background-color: #2a3478;
-    height: 4.0625rem;
+    height: 4rem;
     width: 100%;
-    padding: 0.5rem;
-
 }
 
+/* Logo i navigationsbaren */
 nav img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border: solid 2px rgb(225, 255, 0);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
 }
 
+/* boksen links ligger i, i navigationsbaren */
 .nav-links {
     display: flex;
     justify-content: space-around;
     width: 100%;
     border: solid 2px rgb(0, 255, 47);
-}
-
-.nav-links li {
     list-style: none;
-    border: solid 2px rgb(255, 0, 149);
 }
 
 .nav-links a {
-    color: black;
-    text-decoration: none;
-    border: solid 2px rgb(111, 0, 255);
+    border: solid 2px rgb(255, 0, 174);
+    height: 100%;
+    padding: 0rem 1rem;
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     color: #fcba16;
 }
 
+
+/* ↓↓ dropdown meny ↓↓*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 11rem;
+    background-color: rgb(255, 247, 251); 
+    font-size: 0.9375rem;
+}
+
+.dropdown-content a {
+    margin: 0.6rem 0; 
+    color: rgb(0, 255, 179);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ↓↓ Burger menu ↓↓ */
 .burger {
     display: none;
     cursor: pointer;
-    border: solid 2px red;
 }
 
 .burger div {
-    width: 1.5625rem; /* 25px / 16px */
-    height: 0.1875rem; /* 3px / 16px */
+    width: 2.34375rem; /* 1.5625rem * 1.5 */
+    height: 0.28125rem; /* 0.1875rem * 1.5 */
     background-color: #fcba16;
-    margin: 5px;
+    margin: 7.5px; /* 5px * 1.5 */
     transition: all 0.6s ease;
 }
 
 .burger.toggle div:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-7.5px, 9px); /* -5px * 1.5, 6px * 1.5 */
 }
 
 .burger.toggle div:nth-child(2) {
@@ -64,35 +97,40 @@ nav img {
 }
 
 .burger.toggle div:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-7.5px, -9px); /* -5px * 1.5, -6px * 1.5 */
+}
+
+.forside-billede{
+    width: 40%;
+    height: 40%;
+    border: solid 2px rgb(0, 255, 47);
 }
 
 
 
+/* Media query til mobil */
 @media screen and (max-width: 768px) {
 
-    
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 100vh;
+        height: 80vh;
         top: 10vh;
         width: 60%;
-        background-color: white;
         display: flex;
         flex-direction: column;
-        align-items: center;
         display: none;
-        transform: translateX(100%);
-       
-        
+        background-color: rgb(74, 24, 128);
     }
 
+    /* Gør min burgerbar synlig */
     .burger {
         display: block;
     }
 }
 
+/* ! Skal ligge nederst ! */
+/* Gør linksne synlige når man trykker på burgermenu */
 .nav-links {
     transform: translateX(0);
 }
