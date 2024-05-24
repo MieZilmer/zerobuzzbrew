@@ -211,7 +211,7 @@ article p{
 
 
 /* Media query til mobil */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 768px) {
 
     .nav-links {
         position: absolute;
