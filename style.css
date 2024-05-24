@@ -62,15 +62,14 @@ nav img {
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 11rem;
+    min-width: 22vh;
     background-color: #2a3478;
-    font-size: 0.9375rem;
+    font-size: 2.2vh;
 }
 
 .dropdown-content a {
-    margin: 1rem 0; 
+    margin: 2.2vh 0; 
     color: #fcba16;
-  
     display: flex;
     justify-content: flex-start;
 }
@@ -103,7 +102,12 @@ nav img {
 .burger.toggle div:nth-child(3) {
     transform: rotate(45deg) translate(-1vh, -1.2vh); /* -1.4vh * 0.7143, -1.68vh * 0.7143 */
 }
-/* ↓↓ Main ↓↓ */
+
+/* ↓↓ Main på index filen ↓↓ */
+main{
+    background-color: #ffffff;
+}
+
 .main-index{
     display: flex;
     justify-content: space-around;
@@ -179,16 +183,30 @@ article p{
     width: auto;
 }
 
-#arrow {
-    position: fixed;
-    bottom: 1vh;
-    left: 50%;
-    font-size: 5vh;
-    z-index: 100;
-    cursor: pointer;
+/* ↓↓ Main på vores øl filen ↓↓ */
+.main-vores-oel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    padding-top: 8vh;
+    
 }
-.hidden {
-    display: none;
+
+.main-index section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.vores-oel-billede{
+    height: 70vh;
+    width: auto;
+    border: #fcba16 solid 3px;
 }
 
 
