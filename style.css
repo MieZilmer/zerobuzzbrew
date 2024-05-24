@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +11,7 @@ body {
 /* ↓↓ Navbar ↓↓ */
 /* Selve navigationsbaren */
 nav {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     background-color: #2a3478;
@@ -128,7 +129,7 @@ main{
 }
 
 
-article{
+.main-index article{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,14 +138,14 @@ article{
     width: 100%;
 }
 
-article h1{ 
+.main-index article h1{ 
     font-size: 8vh;
     text-align: center;
     color: #2a3478;
     font-family: charter;
 }
 
-article h2{ 
+.main-index article h2{ 
     font-size: 4vh;
     text-align: center;
     color: #2a3478;
@@ -153,14 +154,14 @@ article h2{
     border: #fcba16 solid 3px;
 }
 
-article img{
+.main-index article img{
     width: 20vh;
     height: auto;
     margin: 1.5rem 0;
     
 }
 
-article h3{ 
+.main-index article h3{ 
     font-size: 1.8rem;
     font-style: italic;
     width: 100%;
@@ -168,15 +169,6 @@ article h3{
     color: #2a3478;
     
 }
-
-article p{
-    font-size: 1rem;
-    color: #2a3478;
-    text-align: justify;
-    margin: 0 6rem 3rem 6rem;
-
-}
-
 
 .forside-billede{
     height: 92vh;
@@ -194,7 +186,7 @@ article p{
     
 }
 
-.main-index section{
+.main-vores-oel section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,12 +194,102 @@ article p{
     height: 100%;
     width: 100%;
 }
+.overskrift{
+   margin: 0 6rem 0 6rem;
+}
+
+.overskrift h2
+{
+    font-size: 3.5vh;
+    color: #2a3478;
+    font-family: charter;
+}
+
+.main-vores-oel article p{
+    font-size: 1rem;
+    color: #2a3478;
+    text-align: justify;
+    margin: 0 6rem 3rem 6rem;
+
+}
+
+.streg{
+    width: 40vw; 
+    height: 0.3vh; 
+    background-color: #b6d98c;
+    margin: 0.5vw 0;
+}
+
 
 .vores-oel-billede{
     height: 70vh;
     width: auto;
-    border: #fcba16 solid 3px;
+    border: #b6d98c solid 3px;
 }
+
+
+/* ↓↓ Slideshow ↓↓ */
+.slider{
+    width: 450px; /* 300px * 1.5 = 450px */
+    overflow: hidden;
+    border: #b6d98c solid 3px;
+}
+
+.images{
+    display: flex;
+}
+
+.images img{
+    height: 600px; /* 400px * 1.5 = 600px */
+    width: auto;
+    transition: all 0.15s ease; 
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 2px #b6d98c;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+
+.dots label:hover {background: #2a3478}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -450px; /* 300px * 1.5 = 450px */
+}
+#img3:checked ~ .m3 {
+    margin-left: -900px; /* 600px * 1.5 = 900px */
+}
+#img4:checked ~ .m4 {
+    margin-left: -1350px; /* 900px * 1.5 = 1350px */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media query til mobil */
@@ -241,4 +323,9 @@ article p{
     display: flex;
     transform: translateX(0%);
 }
+
+
+
+
+
 
