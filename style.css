@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -107,6 +106,11 @@ nav img {
 /* ↓↓ Main på index filen ↓↓ */
 main{
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
 }
 
 .main-index{
@@ -180,10 +184,13 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 92vh;
+    height: 84vh;
     width: 100%;
     padding-top: 8vh;
-    
+}
+
+#ipa{
+    ma
 }
 
 .main-vores-oel section{
@@ -213,26 +220,76 @@ main{
 
 }
 
-.streg{
+.streg-ipa{
+    width: 40vw; 
+    height: 0.3vh; 
+    background-color: #96d9ef;
+    margin: 0.5vw 0;
+}
+.streg-lager{
     width: 40vw; 
     height: 0.3vh; 
     background-color: #b6d98c;
     margin: 0.5vw 0;
 }
-
-
-.vores-oel-billede{
-    height: 70vh;
-    width: auto;
-    border: #b6d98c solid 3px;
+.streg-stout{
+    width: 40vw; 
+    height: 0.3vh; 
+    background-color: #f5831f;
+    margin: 0.5vw 0;
+}
+.streg-fruity{
+    width: 40vw; 
+    height: 0.3vh; 
+    background-color: #f69da8;
+    margin: 0.5vw 0;
+}
+.streg-pilsner{
+    width: 40vw; 
+    height: 0.3vh; 
+    background-color: #fdbc17;
+    margin: 0.5vw 0;
+}
+.streg-weissbier{
+    width: 40vw; 
+    height: 0.3vh; 
+    background-color: #fbecca;
+    margin: 0.5vw 0;
 }
 
 
+
+
 /* ↓↓ Slideshow ↓↓ */
-.slider{
+.slider-ipa{
+    width: 450px; /* 300px * 1.5 = 450px */
+    overflow: hidden;
+    border: #96d9ef solid 3px;
+}
+.slider-lager{
     width: 450px; /* 300px * 1.5 = 450px */
     overflow: hidden;
     border: #b6d98c solid 3px;
+}
+.slider-stout{
+    width: 450px; /* 300px * 1.5 = 450px */
+    overflow: hidden;
+    border: #f5831f solid 3px;
+}
+.slider-fruity{
+    width: 450px; /* 300px * 1.5 = 450px */
+    overflow: hidden;
+    border: #f69da8 solid 3px;
+}
+.slider-pilsner{
+    width: 450px; /* 300px * 1.5 = 450px */
+    overflow: hidden;
+    border: #fdbc17 solid 3px;
+}
+.slider-weissbier{
+    width: 450px; /* 300px * 1.5 = 450px */
+    overflow: hidden;
+    border: #fbecca solid 3px;
 }
 
 .images{
@@ -255,11 +312,56 @@ main{
     margin: 5px;
 }
 
-.dots label {
+.slider-ipa .dots label {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 2px #96d9ef;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.slider-lager .dots label {
     height: 18px;
     width: 18px;
     border-radius: 50%;
     border: solid 2px #b6d98c;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.slider-stout .dots label {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 2px #f5831f;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.slider-fruity .dots label {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 2px #f69da8;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.slider-pilsner .dots label {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 2px #fdbc17;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.slider-weissbier .dots label {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 2px #fbecca;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 5px;
@@ -280,7 +382,76 @@ main{
     margin-left: -1350px; /* 900px * 1.5 = 1350px */
 }
 
+#img5:checked ~ .m5 {
+    margin-left: -0px; /* -450px * 4 */
+}
+#img6:checked ~ .m6 {
+    margin-left: -450px; /* -450px * 5 */
+}
+#img7:checked ~ .m7 {
+    margin-left: -900px; /* -450px * 6 */
+}
+#img8:checked ~ .m8 {
+    margin-left: -1350px; /* -450px * 7 */
+}
 
+#img9:checked ~ .m9 {
+    margin-left: -0px; /* -450px * 4 */
+}
+#img10:checked ~ .m10 {
+    margin-left: -450px; /* -450px * 5 */
+}
+#img11:checked ~ .m11 {
+    margin-left: -900px; /* -450px * 6 */
+}
+#img12:checked ~ .m12 {
+    margin-left: -1350px; /* -450px * 7 */
+}
+
+#img13:checked ~ .m13 {
+    margin-left: -0px; /* -450px * 4 */
+}
+#img14:checked ~ .m14 {
+    margin-left: -450px; /* -450px * 5 */
+}
+#img15:checked ~ .m15 {
+    margin-left: -900px; /* -450px * 6 */
+}
+#img16:checked ~ .m16 {
+    margin-left: -1350px; /* -450px * 7 */
+}
+#img17:checked ~ .m17 {
+    margin-left: -0px; /* -450px * 4 */
+}
+#img18:checked ~ .m18 {
+    margin-left: -450px; /* -450px * 5 */
+}
+#img19:checked ~ .m19 {
+    margin-left: -900px; /* -450px * 6 */
+}
+#img20:checked ~ .m20 {
+    margin-left: -1350px; /* -450px * 7 */
+}
+#img21:checked ~ .m21 {
+    margin-left: -0px; /* -450px * 4 */
+}
+#img22:checked ~ .m22 {
+    margin-left: -450px; /* -450px * 5 */
+}
+#img23:checked ~ .m23 {
+    margin-left: -900px; /* -450px * 6 */
+}
+#img24:checked ~ .m24 {
+    margin-left: -1350px; /* -450px * 7 */
+}
+
+
+img{
+    width: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
 
 
 
