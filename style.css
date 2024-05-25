@@ -254,9 +254,6 @@ main{
     margin: 0.5vw 0;
 }
 
-
-
-
 /* ↓↓ Slideshow ↓↓ */
 .slider-ipa {
     width: 53.5vh;
@@ -266,29 +263,28 @@ main{
 }
 .slider-lager{
     width: 53.5vh;
-    height: 75.7vh;
     overflow: hidden;
-    border: #96d9ef solid 0.3vh;
+    border: #b6d98c solid 0.3vh;
 }
 .slider-stout{
     width: 53.5vh; /* 300px * 1.5 = 450px */
     overflow: hidden;
-    border: #f5831f solid 0.035vh;
+    border: #f5831f solid 0.3vh;
 }
 .slider-fruity{
     width: 53.5vh; /* 300px * 1.5 = 450px */
     overflow: hidden;
-    border: #f69da8 solid 0.035vh;
+    border: #f69da8 solid 0.3vh;
 }
 .slider-pilsner{
     width: 53.5vh; /* 300px * 1.5 = 450px */
     overflow: hidden;
-    border: #fdbc17 solid 0.035vh;
+    border: #fdbc17 solid 0.3vh;
 }
 .slider-weissbier{
     width: 53.5vh; /* 300px * 1.5 = 450px */
     overflow: hidden;
-    border: #fbecca solid 0.035vh;
+    border: #fbecca solid 0.3vh;
 }
 
 .images{
@@ -315,7 +311,7 @@ main{
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.035vh #96d9ef;
+    border: solid 0.3vh #96d9ef;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
@@ -324,7 +320,7 @@ main{
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.035vh #b6d98c;
+    border: solid 0.3vh #b6d98c;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
@@ -333,7 +329,7 @@ main{
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.035vh #f5831f;
+    border: solid 0.3vh #f5831f;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
@@ -342,7 +338,7 @@ main{
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.035vh #f69da8;
+    border: solid 0.3vh #f69da8;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
@@ -351,7 +347,7 @@ main{
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.035vh #fdbc17;
+    border: solid 0.3vh #fdbc17;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
@@ -360,12 +356,11 @@ main{
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.035vh #fbecca;
+    border: solid 0.3vh #fbecca;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
 }
-
 
 .dots label:hover {background: #2a3478}
 #img1:checked ~ .m1 {
@@ -454,12 +449,16 @@ img{
 
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2a3478;
-    height: 20vh;
+    height: 35vh;
     width: 100vw;
+}
 
+.footer div{
+   margin: 2vh;
 }
 
 .footer-logo img{
@@ -481,6 +480,7 @@ img{
     text-decoration: none;
     color: #fcba16;
     font-size: 2.2vh;
+    font-family: charter;
 }
 
 .footer-links a:hover {
@@ -499,12 +499,12 @@ img{
 }
 
 .footer-social a img {
-    height: 5vh;
+    height: 6vh;
     width: auto;
 }
 
 .footer-social a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 /* Media query til mobil */
