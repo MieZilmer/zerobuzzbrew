@@ -13,7 +13,7 @@ nav {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    background-color: #d92869;
+    background-color: #2a3478;
     font-family: charter;
     height: 8vh;
     width: 100vw;
@@ -181,6 +181,15 @@ main{
 .forside-billede{
     height: 92vh;
     width: auto;
+}
+
+.forside-billede {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.forside-billede.loaded {
+    opacity: 1;
 }
 
 /* ↓↓ Main på vores øl filen ↓↓ */

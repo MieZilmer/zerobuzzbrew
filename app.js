@@ -18,3 +18,8 @@ const navSlide = () => {
 }
 
 navSlide(); // Don't forget to call the function
+
+
+window.addEventListener('load', function() {
+    document.querySelector('.forside-billede').classList.add('loaded');
+});
