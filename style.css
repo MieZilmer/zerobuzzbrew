@@ -48,7 +48,7 @@ nav img {
     align-content: center;
     justify-content: center;
     color: #fcba16;
-    font-size: 2.2vh;
+    font-size: 1.9vh;
 }
 
 .nav-links a:hover {
@@ -230,41 +230,28 @@ main{
 
 }
 
-.streg-ipa{
+.streg{
     width: 40vw; 
     height: 0.3vh; 
-    background-color: #96d9ef;
     margin: 0.5vw 0;
+}
+.streg-ipa{
+    background-color: #96d9ef;
 }
 .streg-lager{
-    width: 40vw; 
-    height: 0.3vh; 
     background-color: #b6d98c;
-    margin: 0.5vw 0;
 }
 .streg-stout{
-    width: 40vw; 
-    height: 0.3vh; 
     background-color: #f5831f;
-    margin: 0.5vw 0;
 }
 .streg-fruity{
-    width: 40vw; 
-    height: 0.3vh; 
     background-color: #f69da8;
-    margin: 0.5vw 0;
 }
 .streg-pilsner{
-    width: 40vw; 
-    height: 0.3vh; 
     background-color: #fdbc17;
-    margin: 0.5vw 0;
 }
 .streg-weissbier{
-    width: 40vw; 
-    height: 0.3vh; 
     background-color: #fbecca;
-    margin: 0.5vw 0;
 }
 
 /* ↓↓ Slideshow ↓↓ */
@@ -320,59 +307,31 @@ main{
     margin: 5px;
 }
 
-.slider-ipa .dots label {
+.dots label {
     height: 2.385vh;
     width: 2.385vh;
     border-radius: 50%;
-    border: solid 0.3vh #96d9ef;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.353vh;
+}
+.slider-ipa .dots label {
+    border: solid 0.3vh #96d9ef;
 }
 .slider-lager .dots label {
-    height: 2.385vh;
-    width: 2.385vh;
-    border-radius: 50%;
     border: solid 0.3vh #b6d98c;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 0.353vh;
 }
 .slider-stout .dots label {
-    height: 2.385vh;
-    width: 2.385vh;
-    border-radius: 50%;
     border: solid 0.3vh #f5831f;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 0.353vh;
 }
 .slider-fruity .dots label {
-    height: 2.385vh;
-    width: 2.385vh;
-    border-radius: 50%;
     border: solid 0.3vh #f69da8;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 0.353vh;
 }
 .slider-pilsner .dots label {
-    height: 2.385vh;
-    width: 2.385vh;
-    border-radius: 50%;
     border: solid 0.3vh #fdbc17;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 0.353vh;
 }
 .slider-weissbier .dots label {
-    height: 2.385vh;
-    width: 2.385vh;
-    border-radius: 50%;
     border: solid 0.3vh #fbecca;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 0.353vh;
 }
 
 .dots label:hover {background: #2a3478}
@@ -453,7 +412,8 @@ main{
 }
 
 
-img{
+
+#bund-bi{
     width: auto;
     height: 5vh;
     display: flex;
@@ -518,6 +478,61 @@ img{
 
 .footer-social a img:hover {
     transform: scale(1.5);
+}
+
+/* ↓↓ Main på vores hvorfor alkoholfri filen ↓↓ */
+.main-hvorfor-alkoholfri{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 84vh;
+    width: 100%;
+    padding-top: 8vh;
+}
+
+
+.main-hvorfor-alkoholfri section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.overskrift{
+   margin: 0 6rem 0 6rem;
+}
+
+.overskrift h2
+{
+    font-size: 3.5vh;
+    color: #2a3478;
+    font-family: charter;
+}
+
+
+.main-hvorfor-alkoholfri article p{
+    font-size: 0.9rem;
+    color: #2a3478;
+    text-align: justify;
+    margin: 0 6rem 0.7rem 6rem;
+    
+}
+
+#center{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.main-hvorfor-alkoholfri article h1{ 
+    font-size: 4vh;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+    margin-top: 1.5rem;
+}
+
+.streg-historien-bag{
+    background-color: #96d9ef;
 }
 
 /* Media query til mobil */
