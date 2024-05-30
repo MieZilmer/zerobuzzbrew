@@ -25,8 +25,4 @@ window.addEventListener('load', function() {
 });
 
 
-// document.querySelectorAll('.dropdown-arrow').forEach(function(arrow) {
-//     arrow.addEventListener('click', function() {
-//         this.parentElement.classList.toggle('active');
-//     });
-// });
+

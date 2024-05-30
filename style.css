@@ -82,6 +82,7 @@ nav img {
     display: block;
 }
 
+
 /* ↓↓ Burger menu ↓↓ */
 .burger {
     display: none;
@@ -567,9 +568,9 @@ main{
     transform: scale(1.5);
 }
 
+
 /* Media query til mobil */
 @media screen and (max-width: 768px) {
-    
     .nav-links {
         position: absolute;
         right: 0px;
@@ -589,9 +590,10 @@ main{
         display: block;
     }
 
-    
+    .dropdown-arrow {
+        display: inline;
+    }
 }
-
 
 /* ! Skal ligge nederst ! */
 /* Gør linksne synlige når man trykker på burgermenu */
