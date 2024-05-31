@@ -82,7 +82,6 @@ nav img {
     display: block;
 }
 
-
 /* ↓↓ Burger menu ↓↓ */
 .burger {
     display: none;
@@ -116,6 +115,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom: 3vh;
+    
 }
 
 .main-index{
@@ -437,7 +437,9 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-top: 4vh;
+    padding-top: 8vh;
+    height: 92vh;
+
 }
 
 .main-hvorfor-alkoholfri section{
@@ -505,7 +507,19 @@ main{
     height: 5vh;
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
+    
+}
+
+
+.slider-oelsmagning {
+    width: 53.5vh;
+    height: auto;
+    overflow: hidden;
+    border: #fdbc17 solid 0.3vh;
+}
+
+.slider-oelsmagning .dots label {
+    border: solid 0.3vh #fdbc17;
 }
 
 .footer{
@@ -568,9 +582,9 @@ main{
     transform: scale(1.5);
 }
 
-
 /* Media query til mobil */
 @media screen and (max-width: 768px) {
+    
     .nav-links {
         position: absolute;
         right: 0px;
@@ -590,10 +604,9 @@ main{
         display: block;
     }
 
-    .dropdown-arrow {
-        display: inline;
-    }
+    
 }
+
 
 /* ! Skal ligge nederst ! */
 /* Gør linksne synlige når man trykker på burgermenu */
