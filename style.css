@@ -66,9 +66,10 @@ nav img {
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 25vh;
+    min-width: 14vw;
     background-color: #2a3478;
     font-size: 2.2vh;
+    margin-top: 2.55vh;
 }
 
 .dropdown-content a {
@@ -76,6 +77,7 @@ nav img {
     color: #fcba16;
     display: flex;
     justify-content: flex-start;
+    font-size: 2.4vh;
 }
 
 .dropdown:hover .dropdown-content {
@@ -108,15 +110,7 @@ nav img {
 }
 
 /* ↓↓ Main på index filen ↓↓ */
-main{
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3vh;
-    
-}
+
 
 .main-index{
     display: flex;
@@ -137,7 +131,7 @@ main{
 }
 
 
-.main-index article{
+.main-index aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,47 +140,44 @@ main{
     width: 100%;
 }
 
-.main-index article h1{
+.main-index aside h1{
     font-size: 4vw;
     text-align: center;
     color: #2a3478;
     font-family: charter;
 }
 
-.main-index article h2{
+.main-index aside h2{
     font-size: 4vh;
     text-align: center;
     color: #2a3478;
     font-family: charter;
-    margin: 1.5rem 0 0 0;
+    margin: 3vh 0 0 0;
     border: #fcba16 solid 3px;
 }
 
-.main-index article img{
-    width: 20vh;
+.main-index aside img{
+    width: 10vw;
     height: auto;
-    margin: 1.5rem 0;
-    
-}
-
-.main-index article h3{ 
-    font-size: 1.8rem;
-    font-style: italic;
-    width: 100%;
-    padding: 0 6rem 0 6rem;
-    color: #2a3478;
-    
+    margin: 3vh 0;
 }
 
 .forside-billede {
-    width: 60vh;
-    height: auto;
+    height: 92vh;
+    width: auto;
 }
 
+/* Main test */
+main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+}
 
-
-/* ↓↓ Main på vores øl filen ↓↓ */
-.main-vores-oel{
+.underside {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -194,52 +185,33 @@ main{
     padding-top: 8vh;
 }
 
-
-.main-vores-oel section{
+.underside section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
-    height: 84vh;
-    border: #f5831f solid 0.3vh;
+    height: 85.5vh;
 }
-.main-vores-oel .section-one {
+
+.underside .section-one {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-top: 10vh;
     padding-top: 1vh;
     height: 100%;
     width: 100%;
-   
-}
-
-.overskrift{
-    box-sizing: border-box;
-    margin: 0 6rem 0rem 6rem;
-}
-
-.overskrift h2
-{
-    font-size: 3.5vh;
-    color: #2a3478;
-    font-family: charter;
-}
-
-.main-vores-oel article p{
-    font-size: 0.8rem;
-    color: #2a3478;
-    text-align: start;
-    margin: 0 6rem 0.7rem 6rem;
 }
 
 .streg{
     width: 100%; 
     height: 0.3vh; 
     margin: 0.5vw 0;
+    background-color: #fdbc17;
 }
+
 .streg-ipa{
     background-color: #96d9ef;
 }
@@ -259,45 +231,47 @@ main{
     background-color: #fbecca;
 }
 
-/* ↓↓ Slideshow ↓↓ */
-.slider-ipa {
-    width: 53.5vh;
-    height: auto;
-    overflow: hidden;
-    border: #96d9ef solid 0.3vh;
-}
-.slider-lager{
-    width: 53.5vh;
-    overflow: hidden;
-    border: #b6d98c solid 0.3vh;
-}
-.slider-stout{
-    width: 53.5vh; /* 300px * 1.5 = 450px */
-    overflow: hidden;
-    border: #f5831f solid 0.3vh;
-}
-.slider-fruity{
-    width: 53.5vh; /* 300px * 1.5 = 450px */
-    overflow: hidden;
-    border: #f69da8 solid 0.3vh;
-}
-.slider-pilsner{
-    width: 53.5vh; /* 300px * 1.5 = 450px */
-    overflow: hidden;
-    border: #fdbc17 solid 0.3vh;
-}
-.slider-weissbier{
-    width: 53.5vh; /* 300px * 1.5 = 450px */
-    overflow: hidden;
-    border: #fbecca solid 0.3vh;
+.overskrift{
+    box-sizing: border-box;
+    margin: 0 6.6vw 0 6.6vw;
 }
 
+.overskrift h2
+{
+    font-size: 3.5vh;
+    color: #2a3478;
+    font-family: charter;
+}
+
+.underside p{
+    font-size: 1rem;
+    color: #2a3478;
+    text-align: start;
+    margin: 1.1vh 6.6vw 0 6.6vw;
+}
+
+.underside #strong{
+    font-size: 1rem;
+    color: #2a3478;
+    margin: 1vh 6.6vw 0 6.6vw;
+    text-align: center;
+}
+
+.underside h1{ 
+    font-size: 4vh;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+    margin-top: 2vh;
+}
+
+/* ↓↓ Slideshow ↓↓ */
 .images{
     display: flex;
 }
 
 .images img{
-    height: 71.5vh; /* 400px * 1.5 = 600px */
+    height: 71.5vh;
     width: auto;
     transition: all 0.15s ease; 
 }
@@ -313,13 +287,57 @@ main{
 }
 
 .dots label {
-    height: 2.385vh;
-    width: 2.385vh;
+    height: 2.5vh;
+    width: 2.5vh;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.15s ease;
-    margin: 0.353vh;
+    margin: 0.4vh;
 }
+
+.slider .dots label {
+    border: solid 0.3vh #fdbc17;
+}
+
+.slider {
+    width: 53.5vh;
+    height: auto;
+    overflow: hidden;
+    border: #fdbc17 solid 0.3vh;
+}
+
+.slider-ipa {
+    width: 53.5vh;
+    height: auto;
+    overflow: hidden;
+    border: #96d9ef solid 0.3vh;
+}
+.slider-lager{
+    width: 53.5vh;
+    overflow: hidden;
+    border: #b6d98c solid 0.3vh;
+}
+.slider-stout{
+    width: 53.5vh; 
+    overflow: hidden;
+    border: #f5831f solid 0.3vh;
+}
+.slider-fruity{
+    width: 53.5vh; 
+    overflow: hidden;
+    border: #f69da8 solid 0.3vh;
+}
+.slider-pilsner{
+    width: 53.5vh; 
+    overflow: hidden;
+    border: #fdbc17 solid 0.3vh;
+}
+.slider-weissbier{
+    width: 53.5vh; 
+    overflow: hidden;
+    border: #fbecca solid 0.3vh;
+}
+
 .slider-ipa .dots label {
     border: solid 0.3vh #96d9ef;
 }
@@ -344,76 +362,73 @@ main{
     margin-left: 0;
 }
 #img2:checked ~ .m2 {
-    margin-left: -53.5vh; /* 300px * 1.5 = 450px */
+    margin-left: -53.5vh;
 }
 #img3:checked ~ .m3 {
-    margin-left: -107vh; /* 600px * 1.5 = 900px */
+    margin-left: -107vh;
 }
 #img4:checked ~ .m4 {
-    margin-left: -160.5vh; /* 900px * 1.5 = 1350px */
+    margin-left: -160.5vh;
 }
-
 #img5:checked ~ .m5 {
-    margin-left: -0px; /* -450px * 4 */
+    margin-left: -0px;
 }
 #img6:checked ~ .m6 {
-    margin-left: -53.5vh; /* -450px * 5 */
+    margin-left: -53.5vh;
 }
 #img7:checked ~ .m7 {
-    margin-left: -107vh; /* -450px * 6 */
+    margin-left: -107vh;
 }
 #img8:checked ~ .m8 {
-    margin-left: -160.5vh; /* -450px * 7 */
+    margin-left: -160.5vh;
 }
-
 #img9:checked ~ .m9 {
-    margin-left: -0px; /* -450px * 4 */
+    margin-left: -0px;
 }
 #img10:checked ~ .m10 {
-    margin-left: -53.5vh; /* -450px * 5 */
+    margin-left: -53.5vh;
 }
 #img11:checked ~ .m11 {
-    margin-left: -107vh; /* -450px * 6 */
+    margin-left: -107vh;
 }
 #img12:checked ~ .m12 {
-    margin-left: -160.5vh; /* -450px * 7 */
+    margin-left: -160.5vh;
 }
-
 #img13:checked ~ .m13 {
-    margin-left: -0px; /* -450px * 4 */
+    margin-left: -0px;
 }
 #img14:checked ~ .m14 {
-    margin-left: -53.5vh; /* -450px * 5 */
+    margin-left: -53.5vh;
 }
 #img15:checked ~ .m15 {
-    margin-left: -107vh; /* -450px * 6 */
+    margin-left: -107vh;
 }
 #img16:checked ~ .m16 {
-    margin-left: -160.5vh; /* -450px * 7 */
+    margin-left: -160.5vh;
 }
 #img17:checked ~ .m17 {
-    margin-left: -0px; /* -450px * 4 */
+    margin-left: -0px;
 }
 #img18:checked ~ .m18 {
-    margin-left: -53.5vh; /* -450px * 5 */
+    margin-left: -53.5vh;
 }
 #img19:checked ~ .m19 {
-    margin-left: -107vh; /* -450px * 6 */
+    margin-left: -107vh;
 }
 #img20:checked ~ .m20 {
-    margin-left: -160.5vh; /* -450px * 7 */
+    margin-left: -160.5vh;
 }
 #img21:checked ~ .m21 {
-    margin-left: -0px; /* -450px * 4 */
+    margin-left: -0px;
 }
 #img22:checked ~ .m22 {
-    margin-left: -53.5vh; /* -450px * 5 */
+    margin-left: -53.5vh;
 }
 #img23:checked ~ .m23 {
-    margin-left: -107vh; /* -450px * 6 */
+    margin-left: -107vh;
 }
 #img24:checked ~ .m24 {
-    margin-left: -160.5vh; /* -450px * 7 */
+    margin-left: -160.5vh;
 }
 
 #bund-bi{
@@ -423,176 +438,43 @@ main{
     justify-content: center;
 }
 
-
-
-/* ↓↓ Main på vores hvorfor alkoholfri filen ↓↓ */
-.main-hvorfor-alkoholfri{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding-top: 8vh;
-}
-
-.main-hvorfor-alkoholfri section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    height: 84vh;
-    border: #f5831f solid 0.3vh;
-}
-.main-hvorfor-alkoholfri .section-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding-top: 1vh;
-    height: 100%;
-    width: 100%;
-}
-
-.overskrift{
-    box-sizing: border-box;
-    margin: 0 6rem 0rem 6rem;
-}
-
-.overskrift h2
-{
-    font-size: 3.5vh;
-    color: #2a3478;
-    font-family: charter;
-}
-
-.streg-historien-bag{
-    background-color: #fdbc17;
-}
-
-.main-hvorfor-alkoholfri article p{
-    font-size: 0.8rem;
-    color: #2a3478;
-    text-align: start;
-    margin: 0 6rem 0.7rem 6rem;
-}
-
-#strong{
-    text-align: center;
-    margin-top: 2.5rem;
-}
-
-.main-hvorfor-alkoholfri article h1{ 
-    font-size: 4vh;
-    text-align: center;
-    color: #2a3478;
-    font-family: charter;
-    margin-top: vh;
-}
-
-.slider-gutterne {
-    width: 53.5vh;
-    height: auto;
-    overflow: hidden;
-    border: #fdbc17 solid 0.3vh;
-}
-
-#bund-bi{
-    width: auto;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    
-}
-
-/* ølsmagning */
-.main-oelsmagning{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding-top: 8vh;
-}
-
-
-.main-oelsmagning section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    height: 84vh;
-    border: #f5831f solid 0.3vh;
-}
-.main-oelsmagning .section-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding-top: 1vh;
-    height: 100%;
-    width: 100%;
-   
-}
-
-.overskrift{
-    box-sizing: border-box;
-    margin: 0 6rem 0rem 6rem;
-}
-
-.overskrift h2
-{
-    font-size: 3.5vh;
-    color: #2a3478;
-    font-family: charter;
-}
-
-.main-oelsmagning article p{
-    font-size: 0.8rem;
-    color: #2a3478;
-    text-align: start;
-    margin: 0 6rem 0.7rem 6rem;
-}
-
-.slider-oelsmagning {
-    width: 53.5vh;
-    height: auto;
-    overflow: hidden;
-    border: #fdbc17 solid 0.3vh;
-}
-
-.slider-oelsmagning .dots label {
-    border: solid 0.3vh #fdbc17;
-}
 
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #2a3478;
-    height: 35vh;
+    height: 30vh;
     width: 100vw;
+    padding-top: 3vh;
 }
 
 .footer div{
    margin: 2vh;
 }
 
-.footer-logo img{
-    height: 10vh;
-    width: auto;
+.midt-logo{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .footer-links{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     list-style: none;
+}
+
+.footer-links h1{
+    font-size: 2.7vh;
+    color: #fcba16;
+    font-family: charter;
+    margin-left: 10vw;
 }
 
 .footer-links a {
@@ -600,6 +482,14 @@ main{
     color: #fcba16;
     font-size: 2.2vh;
     font-family: charter;
+    margin-left: 10vw;
+}
+.footer-links p {
+    text-decoration: none;
+    color: #fcba16;
+    font-size: 2.2vh;
+    font-family: charter;
+    margin-left: 10vw;
 }
 
 .footer-links a:hover {
@@ -614,44 +504,589 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 20%;
+}
+.footer-social a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 3vh 0 3vh;
 }
 
 .footer-social a img {
     height: 6vh;
     width: auto;
+
 }
 
 .footer-social a img:hover {
     transform: scale(1.5);
 }
 
+.footer-logo img{
+    height: 10vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+}
+
 /* Media query til mobil */
 @media screen and (max-width: 768px) {
+   
+/* ↓↓ Navbar ↓↓ */
+/* Selve navigationsbaren */
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a3478;
+    font-family: charter;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        width: 100%;
-        top: 8vh;
-        background-color: #2a3478;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
-    }
+}
 
-    .burger {
-        display: block;
-    }
+/* Logo i navigationsbaren */
+nav img {
+    height: 7vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    
+}
 
+/* boksen links ligger i, i navigationsbaren */
+
+.nav-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+    right: 0;
+    height: 200vh;
+    width:100%;
+    top: 0vh;
+    background-color: #ffffff;
+    border: #2a3478 solid 0.3vh;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
     
 }
 
 
+
+.nav-links a {
+    height: 100%;
+    padding: 0rem 2vw;
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #2a3478;
+    font-size: 1.1rem;
+    margin: 5vh;
+    font-family: charter;
+}
+
+#burgerMenuImage {
+    margin-top: 10vh;
+    
+}
+
+/* ↓↓ dropdown meny ↓↓*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 12vw;
+    background-color: #2a3478;
+    font-size: 2.2vh;
+}
+
+.dropdown-content a {
+    margin: 2.2vh 0; 
+    color: #fcba16;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none !important;
+}
+
+/* ↓↓ Burger menu ↓↓ */
+.burger {
+    display: block;
+    cursor: pointer;
+
+}
+.burger div {
+    width: 5vh;
+    height: 0.6vh;
+    background-color: #fcba16;
+    margin: 1vh;
+}
+
+.burger.toggle {
+    position: fixed;
+    top: 10px; /* adjust as needed */
+    right: 10px; /* adjust as needed */
+}
+
+.burger.toggle div:nth-child(1) {
+    transform: rotate(-45deg) translate(-1vh, 1.2vh); 
+}
+
+.burger.toggle div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.toggle div:nth-child(3) {
+    transform: rotate(45deg) translate(-1vh, -1.2vh); 
+}
+
+/* ↓↓ Main på index filen ↓↓ */
+
+
+.main-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    padding-top: 8vh;
+    
+}
+
+.main-index section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.main-index aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.main-index aside h1{
+    font-size: 11vw;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+    
+}
+
+.main-index aside h2{
+    font-size: 2.7vh;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+    margin: 3vh 0 0 0;
+    border: #fcba16 solid 3px;
+    
+}
+
+.main-index aside img{
+    width: 30vw;
+    height: auto;
+    margin: 3vh 0;
+    
+}
+
+.forside-billede {
+    height: 50vh;
+    width: auto;
+}
+
+/* Main test */
+main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    
+}
+
+.underside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 8vh;
+}
+
+.underside section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85.5vh;
+}
+
+.underside .section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10vh;
+    padding-top: 1vh;
+    height: 100%;
+    width: 100%;
+}
+
+.streg{
+    width: 100%; 
+    height: 0.3vh; 
+    margin: 0.5vw 0;
+    background-color: #fdbc17;
+}
+
+.streg-ipa{
+    background-color: #96d9ef;
+}
+.streg-lager{
+    background-color: #b6d98c;
+}
+.streg-stout{
+    background-color: #f5831f;
+}
+.streg-fruity{
+    background-color: #f69da8;
+}
+.streg-pilsner{
+    background-color: #fdbc17;
+}
+.streg-weissbier{
+    background-color: #fbecca;
+}
+
+.overskrift{
+    box-sizing: border-box;
+    margin: 0 6.6vw 0 6.6vw;
+}
+
+.overskrift h2
+{
+    font-size: 3.5vh;
+    color: #2a3478;
+    font-family: charter;
+}
+
+.underside p{
+    font-size: 1rem;
+    color: #2a3478;
+    text-align: start;
+    margin: 1.5vh 6.6vw 0 6.6vw;
+}
+
+.underside #strong{
+    font-size: 1rem;
+    color: #2a3478;
+    margin: 2vh 6.6vw 0 6.6vw;
+    text-align: center;
+}
+
+.underside h1{ 
+    font-size: 4vh;
+    text-align: center;
+    color: #2a3478;
+    font-family: charter;
+    margin-top: 4vh;
+}
+
+/* ↓↓ Slideshow ↓↓ */
+.images{
+    display: flex;
+}
+
+.images img {
+    height: 63vh;
+    width: auto;
+    max-width: 100%; /* add this line */
+    object-fit: cover; /* add this line */
+    transition: all 0.15s ease; 
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 0.4vh;
+}
+
+.slider .dots label {
+    border: solid 0.3vh #fdbc17;
+}
+
+.slider {
+    width: 47vh;
+    height: auto;
+    overflow: hidden;
+    border: #fdbc17 solid 0.3vh;
+}
+
+.slider-ipa {
+    width: 47vh;
+    height: auto;
+    overflow: hidden;
+    border: #96d9ef solid 0.3vh;
+}
+.slider-lager{
+    width: 47vh;
+    overflow: hidden;
+    border: #b6d98c solid 0.3vh;
+}
+.slider-stout{
+    width: 47vh; 
+    overflow: hidden;
+    border: #f5831f solid 0.3vh;
+}
+.slider-fruity{
+    width: 47vh; 
+    overflow: hidden;
+    border: #f69da8 solid 0.3vh;
+}
+.slider-pilsner{
+    width: 47vh; 
+    overflow: hidden;
+    border: #fdbc17 solid 0.3vh;
+}
+.slider-weissbier{
+    width: 47vh; 
+    overflow: hidden;
+    border: #fbecca solid 0.3vh;
+}
+
+.slider-ipa .dots label {
+    border: solid 0.3vh #96d9ef;
+}
+.slider-lager .dots label {
+    border: solid 0.3vh #b6d98c;
+}
+.slider-stout .dots label {
+    border: solid 0.3vh #f5831f;
+}
+.slider-fruity .dots label {
+    border: solid 0.3vh #f69da8;
+}
+.slider-pilsner .dots label {
+    border: solid 0.3vh #fdbc17;
+}
+.slider-weissbier .dots label {
+    border: solid 0.3vh #fbecca;
+}
+
+.dots label:hover {background: #2a3478}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -47vh;
+}
+#img3:checked ~ .m3 {
+    margin-left: -94vh;
+}
+#img4:checked ~ .m4 {
+    margin-left: -141vh;
+}
+#img5:checked ~ .m5 {
+    margin-left: 0;
+}
+#img6:checked ~ .m6 {
+    margin-left: -47vh;
+}
+#img7:checked ~ .m7 {
+    margin-left: -94vh;
+}
+#img8:checked ~ .m8 {
+    margin-left: -141vh;
+}
+#img9:checked ~ .m9 {
+    margin-left: 0;
+}
+#img10:checked ~ .m10 {
+    margin-left: -47vh;
+}
+#img11:checked ~ .m11 {
+    margin-left: -94vh;
+}
+#img12:checked ~ .m12 {
+    margin-left: -141vh;
+}
+#img13:checked ~ .m13 {
+    margin-left: 0;
+}
+#img14:checked ~ .m14 {
+    margin-left: -47vh;
+}
+#img15:checked ~ .m15 {
+    margin-left: -94vh;
+}
+#img16:checked ~ .m16 {
+    margin-left: -141vh;
+}
+#img17:checked ~ .m17 {
+    margin-left: 0;
+}
+#img18:checked ~ .m18 {
+    margin-left: -47vh;
+}
+#img19:checked ~ .m19 {
+    margin-left: -94vh;
+}
+#img20:checked ~ .m20 {
+    margin-left: -141vh;
+}
+#img21:checked ~ .m21 {
+    margin-left: 0;
+}
+#img22:checked ~ .m22 {
+    margin-left: -47vh;
+}
+#img23:checked ~ .m23 {
+    margin-left: -94vh;
+}
+#img24:checked ~ .m24 {
+    margin-left: -141vh;
+}
+
+#bund-bi{
+    width: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #2a3478;
+    height: 30vh;
+    width: 100vw;
+    
+}
+
+.footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5vh 0 2.5 ;
+    width: 90%;
+
+}
+
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Add this line */
+    width: 100%;
+}
+
+.footer-links h1{
+    font-size: 2.7vh;
+    color: #fcba16;
+    font-family: charter;
+    
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fcba16;
+    font-size: 2.2vh;
+    font-family: charter;
+    margin-bottom: 0.7vh;
+    
+}
+.footer-links p {
+    text-decoration: none;
+    color: #fcba16;
+    font-size: 2.2vh;
+    font-family: charter;
+    margin-bottom: 0.7vh;
+    
+}
+
+.footer-links a:hover {
+    color: white;
+    
+}
+
+.footer-links a:active {
+    color: #fcba16;
+    
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.footer-social a img {
+    height: 6vh;
+    width: auto;
+    
+}
+
+.footer-social a img:hover {
+    transform: scale(1.5);
+}
+
+.footer-logo img{
+    height: 10vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+}
 /* ! Skal ligge nederst ! */
 /* Gør linksne synlige når man trykker på burgermenu */
 .nav-links {
