@@ -443,11 +443,10 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: #2a3478;
-    height: 30vh;
+    height: 35vh;
     width: 100vw;
-    padding-top: 3vh;
 }
 
 .footer div{
@@ -465,31 +464,43 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     list-style: none;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+#footer-links-to{
+    margin-top: -2vh;
 }
 
 .footer-links h1{
     font-size: 2.7vh;
     color: #fcba16;
     font-family: charter;
-    margin-left: 10vw;
+
 }
+
 
 .footer-links a {
     text-decoration: none;
     color: #fcba16;
     font-size: 2.2vh;
     font-family: charter;
-    margin-left: 10vw;
+    
+    
 }
 .footer-links p {
     text-decoration: none;
     color: #fcba16;
     font-size: 2.2vh;
     font-family: charter;
-    margin-left: 10vw;
 }
 
 .footer-links a:hover {
@@ -515,7 +526,6 @@ main{
 .footer-social a img {
     height: 6vh;
     width: auto;
-
 }
 
 .footer-social a img:hover {
@@ -527,7 +537,6 @@ main{
     width: auto;
     display: flex;
     align-items: center;
-    margin-top: 3vh;
 }
 
 /* Media query til mobil */
@@ -546,7 +555,6 @@ nav {
     position: fixed;
     top: 0;
     z-index: 100;
-    
 }
 
 /* Logo i navigationsbaren */
@@ -556,11 +564,9 @@ nav img {
     display: flex;
     align-items: center;
     margin-left: 2vw;
-    
 }
 
 /* boksen links ligger i, i navigationsbaren */
-
 .nav-links {
     position: fixed;
     display: flex;
@@ -579,8 +585,6 @@ nav img {
     
 }
 
-
-
 .nav-links a {
     height: 100%;
     padding: 0rem 2vw;
@@ -591,14 +595,16 @@ nav img {
     justify-content: center;
     color: #2a3478;
     font-size: 1.1rem;
-    margin: 5vh;
+    margin: 4vh;
     font-family: charter;
 }
 
+
 #burgerMenuImage {
-    margin-top: 10vh;
-    
+    /* adjust as needed */
+    margin-top: 15vh; /* adjust as needed */
 }
+
 
 /* ↓↓ dropdown meny ↓↓*/
 .dropdown {
@@ -630,12 +636,13 @@ nav img {
     display: none !important;
 }
 
-/* ↓↓ Burger menu ↓↓ */
+
 .burger {
     display: block;
     cursor: pointer;
-
 }
+
+
 .burger div {
     width: 5vh;
     height: 0.6vh;
@@ -681,7 +688,6 @@ nav img {
     align-items: center;
     height: 100%;
     width: 100%;
-    
 }
 
 
@@ -692,32 +698,27 @@ nav img {
     align-items: center;
     height: 100%;
     width: 100%;
-    
 }
 
 .main-index aside h1{
-    font-size: 11vw;
+    font-size: 10vw;
     text-align: center;
     color: #2a3478;
     font-family: charter;
-    
 }
 
 .main-index aside h2{
-    font-size: 2.7vh;
+    font-size: 3vh;
     text-align: center;
     color: #2a3478;
     font-family: charter;
     margin: 3vh 0 0 0;
     border: #fcba16 solid 3px;
-    
 }
 
 .main-index aside img{
     width: 30vw;
     height: auto;
-    margin: 3vh 0;
-    
 }
 
 .forside-billede {
@@ -1004,34 +1005,28 @@ main{
     display: flex;
     flex-direction: column;
     background-color: #2a3478;
-    height: 30vh;
+    height: 60vh;
     width: 100vw;
-    
 }
 
 .footer div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2.5vh 0 2.5 ;
-    width: 90%;
-
+    margin: 2.5vh;
 }
 
 
 .footer-links{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; /* Add this line */
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+    list-style: none;
 }
 
 .footer-links h1{
     font-size: 2.7vh;
     color: #fcba16;
     font-family: charter;
-    
 
 }
 
@@ -1041,7 +1036,6 @@ main{
     font-size: 2.2vh;
     font-family: charter;
     margin-bottom: 0.7vh;
-    
 }
 .footer-links p {
     text-decoration: none;
@@ -1049,17 +1043,14 @@ main{
     font-size: 2.2vh;
     font-family: charter;
     margin-bottom: 0.7vh;
-    
 }
 
 .footer-links a:hover {
     color: white;
-    
 }
 
 .footer-links a:active {
     color: #fcba16;
-    
 }
 
 .footer-social {
@@ -1067,13 +1058,11 @@ main{
     justify-content: space-evenly;
     align-items: center;
     
-    
 }
 
 .footer-social a img {
     height: 6vh;
     width: auto;
-    
 }
 
 .footer-social a img:hover {
@@ -1086,7 +1075,8 @@ main{
     display: flex;
     align-items: center;
 }
-}
+
+
 /* ! Skal ligge nederst ! */
 /* Gør linksne synlige når man trykker på burgermenu */
 .nav-links {
