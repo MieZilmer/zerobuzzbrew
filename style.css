@@ -39,6 +39,7 @@ nav img {
     list-style: none;
 }
 
+/* Links */
 .nav-links a {
     height: 100%;
     padding: 0rem 2vw;
@@ -51,6 +52,7 @@ nav img {
     font-size: 1.9vh;
 }
 
+/* Skalere linksne 1.1 op når man holder musen over */
 .nav-links a:hover {
     transform: scale(1.1);
 }
@@ -63,6 +65,7 @@ nav img {
     z-index: 9;
 }
 
+/* boksen links ligger i, i dropdownbaren */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -71,6 +74,7 @@ nav img {
     font-size: 2.2vh;
 }
 
+/* Links i dropdownbaren */
 .dropdown-content a {
     margin: 2.2vh 0; 
     color: #fcba16;
@@ -79,42 +83,17 @@ nav img {
     font-size: 2.4vh;
 }
 
+/* Gør dropdownmenuen synlig når man holder musen over et hovedmenupunkt */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* ↓↓ Burger menu ↓↓ */
-.burger {
-    display: none;
-    cursor: pointer;
-
-}
-.burger div {
-    width: 5vh;
-    height: 0.6vh;
-    background-color: #fcba16;
-    margin: 1vh;
-}
-
+/* Gør at billede ikke bliver vist på skærme over 768px*/
 #burger-menu-image {
     display: none;
 }
 
-.burger.toggle div:nth-child(1) {
-    transform: rotate(-45deg) translate(-1vh, 1.2vh); 
-}
-
-.burger.toggle div:nth-child(2) {
-    opacity: 0;
-}
-
-.burger.toggle div:nth-child(3) {
-    transform: rotate(45deg) translate(-1vh, -1.2vh); 
-}
-
 /* ↓↓ Main på index filen ↓↓ */
-
-
 .main-index{
     display: flex;
     justify-content: space-around;
@@ -122,7 +101,6 @@ nav img {
     height: 92vh;
     width: 100%;
     padding-top: 8vh;
-    
 }
 
 .main-index section{
@@ -170,7 +148,7 @@ nav img {
     width: auto;
 }
 
-/* Main test */
+/* ↓↓ Main på undersiderne ↓↓*/
 main{
     background-color: #ffffff;
     display: flex;
@@ -466,7 +444,7 @@ main{
     justify-content: center;
 }
 
-
+/* ↓↓ Footer ↓↓ */
 .footer{
     display: flex;
     flex-direction: row;
@@ -515,15 +493,13 @@ main{
 
 }
 
-
 .footer-links a {
     text-decoration: none;
     color: #fcba16;
     font-size: 2.2vh;
     font-family: charter;
-    
-    
 }
+
 .footer-links p {
     text-decoration: none;
     color: #fcba16;
@@ -567,11 +543,8 @@ main{
     align-items: center;
 }
 
-/* Media query til mobil */
+/* Media query til mobil / skærme under 768px*/
 @media screen and (max-width: 768px) {
-   
-/* ↓↓ Navbar ↓↓ */
-/* Selve navigationsbaren */
 nav {
     display: flex; 
     justify-content: space-between;
@@ -585,7 +558,6 @@ nav {
     z-index: 100;
 }
 
-/* Logo i navigationsbaren */
 nav img {
     height: 7vh;
     width: auto;
@@ -594,7 +566,6 @@ nav img {
     margin-left: 2vw;
 }
 
-/* boksen links ligger i, i navigationsbaren */
 .nav-links {
     position: fixed;
     display: flex;
@@ -697,8 +668,6 @@ nav img {
 }
 
 /* ↓↓ Main på index filen ↓↓ */
-
-
 .main-index{
     display: flex;
     flex-direction: column;
@@ -707,7 +676,6 @@ nav img {
     height: 92vh;
     width: 100%;
     padding-top: 8vh;
-    
 }
 
 .main-index section{
@@ -717,7 +685,6 @@ nav img {
     height: 100%;
     width: 100%;
 }
-
 
 .main-index aside{
     display: flex;
@@ -754,7 +721,7 @@ nav img {
     width: auto;
 }
 
-/* Main test */
+/* Main på undersiderne */
 main{
     background-color: #ffffff;
     display: flex;
@@ -862,9 +829,9 @@ main{
 .images img {
     height: 63vh;
     width: auto;
-    max-width: 100%; /* add this line */
-    object-fit: cover; /* add this line */
-    transition: all 0.15s ease; 
+    max-width: 100%;
+    object-fit: cover;
+    transition: all 0.15s ease;
 }
 
 .images input{
@@ -919,22 +886,22 @@ main{
     border: #b6d98c solid 0.3vh;
 }
 .slider-stout{
-    width: 47vh; 
+    width: 47vh;
     overflow: hidden;
     border: #f5831f solid 0.3vh;
 }
 .slider-fruity{
-    width: 47vh; 
+    width: 47vh;
     overflow: hidden;
     border: #f69da8 solid 0.3vh;
 }
 .slider-pilsner{
-    width: 47vh; 
+    width: 47vh;
     overflow: hidden;
     border: #fdbc17 solid 0.3vh;
 }
 .slider-weissbier{
-    width: 47vh; 
+    width: 47vh;
     overflow: hidden;
     border: #fbecca solid 0.3vh;
 }
@@ -1039,9 +1006,7 @@ main{
     justify-content: center;
 }
 
-
-
-
+/* footer */
 .footer{
     display: flex;
     flex-direction: column;
