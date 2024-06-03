@@ -35,3 +35,12 @@ function hideNavLinks() {
   document.body.style.overflow = '';
   document.documentElement.style.overflow = ''; // Add this line
 }
+
+var burgerMenu = document.querySelector('.burger');
+var burgerImage = document.querySelector('#burger-menu-image');
+
+burgerMenu.addEventListener('click', function() {
+    burgerImage.classList.toggle('hidden');
+});
+
+
