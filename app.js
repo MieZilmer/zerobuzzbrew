@@ -20,22 +20,6 @@ const navSlide = () => {
 navSlide(); // Don't forget to call the function
 
 
-window.addEventListener('load', function() {
-    document.querySelector('.forside-billede').classList.add('loaded');
-});
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  if (window.innerWidth <= 768) { // Check if the window's width is less than or equal to 768px
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.querySelector("nav").style.top = "0";
-    } else {
-      document.querySelector("nav").style.top = "-8vh";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-}
 
 
 // Function to show the nav links and disable body and html scroll

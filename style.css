@@ -34,7 +34,7 @@ nav img {
 /* boksen links ligger i, i navigationsbaren */
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     list-style: none;
 }
@@ -69,7 +69,6 @@ nav img {
     min-width: 14vw;
     background-color: #2a3478;
     font-size: 2.2vh;
-    margin-top: 2.55vh;
 }
 
 .dropdown-content a {
@@ -95,6 +94,10 @@ nav img {
     height: 0.6vh;
     background-color: #fcba16;
     margin: 1vh;
+}
+
+#burger-menu-image {
+    display: none;
 }
 
 .burger.toggle div:nth-child(1) {
@@ -280,6 +283,7 @@ main{
     display: none;
 }
 
+
 .dots{
     display: flex;
     justify-content: center;
@@ -293,6 +297,16 @@ main{
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.4vh;
+
+}
+.dots label:nth-of-type(1){
+    height: 2.5vh;
+    width: 2.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 0.4vh;
+    background: #2a3478;
 }
 
 .slider .dots label {
@@ -600,12 +614,6 @@ nav img {
 }
 
 
-#burgerMenuImage {
-    /* adjust as needed */
-    margin-top: 15vh; /* adjust as needed */
-}
-
-
 /* ↓↓ dropdown meny ↓↓*/
 .dropdown {
     position: relative;
@@ -650,10 +658,17 @@ nav img {
     margin: 1vh;
 }
 
+#burger-menu-image {
+    display: block;
+    margin-top: 15vh; 
+}
+
+
 .burger.toggle {
     position: fixed;
-    top: 10px; /* adjust as needed */
-    right: 10px; /* adjust as needed */
+    top: 3vw;
+    right: 10px;
+    border: #f5831f solid 0.3vh;
 }
 
 .burger.toggle div:nth-child(1) {
@@ -722,7 +737,7 @@ nav img {
 }
 
 .forside-billede {
-    height: 50vh;
+    height: 49vh;
     width: auto;
 }
 
@@ -856,6 +871,16 @@ main{
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 0.4vh;
+}
+
+.dots label:nth-of-type(1){
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 0.4vh;
+    background: #2a3478;
 }
 
 .slider .dots label {
@@ -1001,6 +1026,9 @@ main{
     justify-content: center;
 }
 
+
+
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -1009,12 +1037,29 @@ main{
     width: 100vw;
 }
 
-.footer div{
-    margin: 2.5vh;
+.midt-logo {
+    order: 2;
 }
 
+.footer-links {
+    order: 1;
+}
 
-.footer-links{
+.footer-links h1{
+    font-size: 2.7vh;
+    color: #fcba16;
+    font-family: charter;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fcba16;
+    font-size: 2.2vh;
+    font-family: charter;
+    margin-bottom: 0.7vh;
+}
+.footer-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1037,6 +1082,8 @@ main{
     font-family: charter;
     margin-bottom: 0.7vh;
 }
+
+
 .footer-links p {
     text-decoration: none;
     color: #fcba16;
@@ -1057,7 +1104,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+    margin-top: 20;
 }
 
 .footer-social a img {
