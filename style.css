@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Myriad Web Pro
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 /* ↓↓ Navbar ↓↓ */
@@ -246,11 +246,25 @@ main{
     font-family: charter;
 }
 
+
 .underside p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #2a3478;
     text-align: start;
     margin: 1.1vh 6.6vw 0 6.6vw;
+}
+
+.mindre p{
+    font-size: 0.8rem;
+    color: #2a3478;
+    text-align: start;
+    margin: 1.1vh 6.6vw 0 6.6vw;
+}
+
+#rundvisning a{
+    font-size: 0.8rem;
+    color: #fdbc17;
+    text-align: start;
 }
 
 .underside #strong{
