@@ -11,7 +11,7 @@ body {
 /* Selve navigationsbaren */
 nav {
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #2a3478;
     font-family: charter;
@@ -24,7 +24,7 @@ nav {
 
 /* Logo i navigationsbaren */
 nav img {
-    height: 7vh;
+    height: 6.5vh;
     width: auto;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ nav img {
 /* boksen links ligger i, i navigationsbaren */
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     list-style: none;
 }
@@ -166,7 +166,7 @@ nav img {
 }
 
 .forside-billede {
-    height: 92vh;
+    height: 85vh;
     width: auto;
 }
 
@@ -250,14 +250,14 @@ main{
 .underside p{
     font-size: 0.9rem;
     color: #2a3478;
-    text-align: start;
+    text-align: justify;
     margin: 1.1vh 6.6vw 0 6.6vw;
 }
 
 .mindre p{
     font-size: 0.8rem;
     color: #2a3478;
-    text-align: start;
+    text-align: justify;
     margin: 1.1vh 6.6vw 0 6.6vw;
 }
 
@@ -268,9 +268,9 @@ main{
 }
 
 .underside #strong{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #2a3478;
-    margin: 1vh 6.6vw 0 6.6vw;
+    margin: 4vh 6.6vw 0 6.6vw;
     text-align: center;
 }
 
@@ -615,7 +615,7 @@ nav img {
 
 .nav-links a {
     height: 100%;
-    padding: 0rem 2vw;
+    padding: 0;
     text-decoration: none; 
     display: flex;
     align-items: center;
@@ -623,7 +623,7 @@ nav img {
     justify-content: center;
     color: #2a3478;
     font-size: 1.1rem;
-    margin: 4vh;
+    margin: 4vh 0;
     font-family: charter;
 }
 
@@ -682,7 +682,6 @@ nav img {
     position: fixed;
     top: 3vw;
     right: 10px;
-    border: #f5831f solid 0.3vh;
 }
 
 .burger.toggle div:nth-child(1) {
@@ -836,14 +835,14 @@ main{
 .underside p{
     font-size: 1rem;
     color: #2a3478;
-    text-align: start;
+    text-align: justify;
     margin: 1.5vh 6.6vw 0 6.6vw;
 }
 
 .underside #strong{
     font-size: 1rem;
     color: #2a3478;
-    margin: 2vh 6.6vw 0 6.6vw;
+    margin: 5vh 6.6vw 0 6.6vw;
     text-align: center;
 }
 
