@@ -243,8 +243,11 @@ main{
 
 #rundvisning a{
     font-size: 0.8rem;
-    color: #fdbc17;
-    text-align: start;
+    color: #2a3478;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: -1vh;
 }
 
 .underside #strong{
@@ -771,6 +774,15 @@ main{
     color: #2a3478;
     text-align: justify;
     margin: 1.5vh 6.6vw 0 6.6vw;
+}
+
+#rundvisning a{
+    font-size: 0.8rem;
+    color: #2a3478;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
 }
 
 .underside #strong{
