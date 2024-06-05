@@ -10,28 +10,28 @@ const navSlide = () => {
         // Burger animation
         burger.classList.toggle('toggle');
 
-        // Apply transition to each div inside the burger
+        // Angiv transition til hvert div inde i burgeren
         burgerDivs.forEach((div) => {
             div.style.transition = 'all 0.6s ease';
         });
     });
 }
 
-navSlide(); // Don't forget to call the function
+navSlide(); // Husk at kalde funktionen
 
 
-// Function to show the nav links and disable body and html scroll
+// Funktion til at vise nav links og deaktivere body og html scroll
 function showNavLinks() {
   navLinks.style.transform = 'translateX(0)';
   document.body.style.overflow = 'hidden';
   document.documentElement.style.overflow = 'hidden'; // Add this line
 }
 
-// Function to hide the nav links and enable body and html scroll
+// Fukytion til at skjule nav links og aktivere body og html scroll
 function hideNavLinks() {
   navLinks.style.transform = 'translateX(100%)';
   document.body.style.overflow = '';
-  document.documentElement.style.overflow = ''; // Add this line
+  document.documentElement.style.overflow = ''; 
 }
 
 var burgerMenu = document.querySelector('.burger');
