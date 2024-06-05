@@ -49,7 +49,7 @@ nav img {
     align-content: center;
     justify-content: center;
     color: #fcba16;
-    font-size: 1.2vw;
+    font-size: 1.9vh;
 }
 
 /* Skalere linksne 1.1 op når man holder musen over */
@@ -466,14 +466,14 @@ main{
 .footer-links a {
     text-decoration: none;
     color: #fcba16;
-    font-size: 1.6vw;
+    font-size: 2.2vh;
     font-family: charter;
 }
 
 .footer-links p {
     text-decoration: none;
     color: #fcba16;
-    font-size: 1.6vw;
+    font-size: 2.2vh;
     font-family: charter;
 }
 
