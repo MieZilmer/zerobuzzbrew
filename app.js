@@ -4,7 +4,7 @@ const navSlide = () => {
     const burgerDivs = document.querySelectorAll('.burger div');
 
     burger.addEventListener('click', () => {
-        // Toggle nav
+        // Toggle navigationsbaren
         nav.classList.toggle('nav-active');
 
         // Burger animation
@@ -18,8 +18,6 @@ const navSlide = () => {
 }
 
 navSlide(); // Don't forget to call the function
-
-
 
 
 // Function to show the nav links and disable body and html scroll
